@@ -3,6 +3,8 @@ language: ruby
 install: "echo skip bundle install"
 
 script:
+  - git clone git@github.com:Vanuan/redmine_backlogs_rails3.git
+  - cd redmine_backlogs_rails3
   - touch 1
   - git add 1
   - git commit -m "travis"
