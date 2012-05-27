@@ -3,7 +3,8 @@ language: ruby
 install: "echo skip bundle install"
 
 script:
-  - echo yes | git clone git@github.com:Vanuan/redmine_backlogs_rails3.git
+  - ssh-keygen -R github.com
+  - git clone git@github.com:Vanuan/redmine_backlogs_rails3.git
   - cd redmine_backlogs_rails3
   - touch 1
   - git add 1
