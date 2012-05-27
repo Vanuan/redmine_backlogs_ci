@@ -1,0 +1,9 @@
+language: ruby
+
+install: "echo skip bundle install"
+
+script:
+  - touch 1
+  - git add 1
+  - git commit -m "travis"
+  - git push
